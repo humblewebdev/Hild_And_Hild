@@ -1,0 +1,433 @@
+/*
+Theme Name: Hild & Hild
+Theme URI: http://www.webtegrity.com
+Description: Hil & Hild is a custom theme built for Hild & Hild
+Author: Webtegrity
+Author URI: http://www.webtegrity.com
+Version: 1
+*/
+
+/* Table of Contents
+-----------------------------------------------------------------------------
+
+	1. Clean Base
+	2. Base Typography
+	3. Images
+	4. Links
+	5. Forms
+	6. Tables
+	7. Framework
+
+*/
+
+/* 1. Create a Clean Base
+------------------------------------------------------------------------------*/
+html,body,br,hr,div,span,a,object,iframe,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,p,blockquote,q,address,small,big,cite,dfn,ins,del,i,em,b,strong,sup,sub,strike,pre,code,samp,kbd,var,tt,form,fieldset,legend,label,input,textarea,option,.nobox
+	{
+	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+br {
+	height: 0;
+}
+
+ul,ol,dl,li {
+	list-style: none;
+}
+
+a {
+	border: none;
+}
+
+/* Class for clearing floats */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.wrapper {
+	max-width: 1280px;
+	width:auto;
+	margin: auto;
+}
+
+.shadow {
+	position: relative;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+	top: -2px;
+	border-top: 0;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.fancy {
+	line-height: 0.5;
+	text-align: left;
+}
+
+.fancy span {
+	display: inline-block;
+	position: relative;
+}
+
+.fancy span:after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	background: #515151;
+	top: 0;
+	width: 90px;
+}
+
+.fancy span:after {
+	left: 100%;
+	margin-left: 15px;
+}
+
+
+
+/* 2. Define Base Typography 
+------------------------------------------------------------------------------*/
+
+/* Create the Default Headers  */
+h1,h2,h3,h4,h5,h6 {
+	color: #535353;
+	font-family: 'PT Sans', sans-serif;
+}
+
+/* Create the Default Paragraphs */
+p {
+	color: #000;
+	line-height: 23px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+/* Specific Header Settings */
+h1 {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+h3 {
+	font-size: 12px;
+}
+
+h4 {
+	font-size: 10px;
+	margin-bottom: 3px;
+	color: #6d6d6d;
+	font-weight: normal;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+/* Other Typo */
+strong {
+	font-weight: bold;
+	color: #0e583d;
+}
+
+hr {
+	border: 0 #000 solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style: disc;
+}
+
+/* 3. Images
+------------------------------------------------------------------------------*/
+
+/* Remove border around linked images */
+img {
+	border: 0;
+	border-style: none;
+}
+
+.img-responsive {
+	margin:auto;
+}
+/* 4. Links
+------------------------------------------------------------------------------*/
+
+/* Default Link Types */
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #535353;
+	text-decoration: none;
+}
+
+a:active {
+	outline: none;
+}
+
+a:focus {
+	outline: none;
+}
+
+/* 5. Header
+-------------------------------------------------------------------------------*/
+.nav-bar{
+	position:relative;
+	border-bottom:1px solid #e5e5e5;
+}
+.header_top{
+	height:30px;
+}
+ul.contact_info {
+	display:inline
+}
+
+ul.contact_info >li{
+	float:left;
+	padding:0 10px;
+	margin:10px 0;
+	border-right:1px solid black;
+	color:#808080;
+	font-size:0.750em;
+}
+
+ul.contact_info li> span{
+	margin:0 10px 0 0;
+}
+
+ul.contact_info >li:last-child{
+	border:none;
+}
+
+ul.social{
+	display:inline;
+	color:#808080;
+	
+}
+
+ul.social li{
+	margin:0 0 0 10px;
+	float:left;
+}
+
+ul.social li a{
+	font-size:1.250em;
+}
+
+ul.social li:hover{
+	position:relative;
+		top:2px;
+}
+
+[class*="foundicon-"] {
+	color:#808080;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar .navbar-nav>.active>a {
+	background:#2f57a8;
+	color:white;
+}
+.navbar {
+	min-height:0px;
+	margin:0;
+	height:auto;
+	background:none;
+	border:none;
+	-webkit-box-shadow:none;
+}
+.collapse{
+	position:absolute;
+	bottom:30%;
+	right:20px;
+}
+
+ul.navbar-nav{
+	margin:0;
+	padding:0;
+	
+}
+
+.nav>li>a {
+	padding:10px;
+}
+
+
+/* 6. Slider
+-------------------------------------------------------------------------------*/
+.slider{
+	background:#1c3b67;
+	min-height:15px;
+}
+
+
+/* 7. Content
+-------------------------------------------------------------------------------*/
+.content{
+	text-align:center;
+}
+
+.content h1{
+	text-align:left;
+	margin:20px;
+	font-size:1.75em;
+}
+.service_block{
+	text-align:left;
+	padding:20px;
+}
+.btn-contactus {
+	color:white;
+	background:#2f57a8;
+	padding:6px 80px;
+	border:none;
+	border-radius:0;
+	font-size:1.68em;
+	margin:10px 0;
+}
+
+.btn-contactus:hover{
+	opacity:.8;
+	color:white;
+}
+
+.block_content h2{
+	font-size:1.438em;
+	line-height:100%;
+}
+
+.block_content p{
+	font-size:0.750em;
+}
+
+.service_block img {
+	padding-right: 10px;
+}
+
+/*-----Sidebar -----*/
+.sidebar{
+	border-radius:20px;
+	border:1px solid #d9dada;
+}
+
+.content-sidebar{
+
+}
+
+/* 7. Footer
+-------------------------------------------------------------------------------*/
+footer {
+	padding:20px;
+	background:#f7f7f8;
+}
+
+footer img{
+	padding: 5% 0 5% 0;
+}
+ul.footer_block{
+	width:300px;
+	height:;
+}
+li.footer_menu_header{
+	font-family:arial;
+	font-size:1.00em;
+	font-weight: 600;
+}
+
+footer li.menu-item a{
+	font-family:arial;
+	font-size:.938em;
+	margin:0 0 0 5px;
+	color:#838384;
+}
+
+footer li.menu-item{
+	width:100%;
+	padding:10px 0;
+	border-bottom:1px solid #dee1e3;
+}
+
+footer li.menu-item:last-child{
+	border:none;
+}
+
+footer li.menu-item a:hover{
+	position:relative;
+	top:2px;
+}
+
+footer li.menu-item span{
+	position: relative;
+	bottom: 2px;
+	padding: 2px 4px;
+	height: 0px;
+	width: 0px;
+	color: #2e84ec;
+	border: 1px solid #2e84ec;
+	border-radius: 20px;
+	margin: 0px 2px;
+	font-size: 9px;
+}
+
+footer li p{
+	color:#8d90a1;
+	padding:0 0 0 40px;
+}
+li.tweet span{
+	color: #2e84ec;
+	padding:0 0 0 40px;
+}
+
+li.tweet i {
+	position: relative;
+	color: white;
+	background: #2e84ec;
+	border-radius: 20px;
+	padding: 4px 3px 0px 3px;
+}
+
+li.tweet {
+	padding:20px 0;
+	border-bottom:1px solid #dee1e3;
+}
+
+li.tweet:last-child{
+	border:none;
+}
+
+
